@@ -1,0 +1,22 @@
+{
+  "name": "21.nuxt-board",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@nuxtjs/axios": "^5.12.5",
+    "core-js": "^3.8.3",
+    "nuxt": "^2.14.12",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.3"
+  }
+}
