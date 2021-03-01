@@ -1,4 +1,4 @@
-@import './variables';
+@import "variables";
 
 @mixin layer($position, $top, $right, $bottom, $left) {
 	position: $position;
