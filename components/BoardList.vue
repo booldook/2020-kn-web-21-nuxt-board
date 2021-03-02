@@ -38,7 +38,9 @@ export default {
 			this.$router.push('/detail/' + id)
 		},
 		srcIcon(savefile) {
-			return `/ext/${path.extname(savefile).substr(1)}.png`
+			if(savefile) {
+				return `/ext/${path.extname(savefile).substr(1)}.png`
+			}
 		}
 	}
 }

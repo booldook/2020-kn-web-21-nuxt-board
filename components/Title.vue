@@ -3,7 +3,7 @@
 		h2 Vue/Nuxt/Vuetify/Scss를 활용한 게시판
 			br
 			small BackEnd:
-				span Express/MySQL
+				span.ml-2 Express/MySQL
 </template>
 
 <script>
@@ -17,7 +17,7 @@ export default {
 	margin: 3em auto;
 	text-align: center;
 	> h2 {
-		color: $colorDark;
+		color: $colorDarker;
 		small {
 			color: $colorGrey;
 			span {

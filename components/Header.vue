@@ -5,9 +5,9 @@
 				v-avatar(color="booldook" size="48") BK
 		ul.navi-wrapper
 			.navi
-				a(href="http://127.0.0.1:3000") Node/Express Board
+				a(href=`${process.env.SERVER}`) Node/Express Board
 			.navi
-				a(href="http://127.0.0.1:5000") React/Nuxt Board
+				a(href=`${process.env.REACT}`) React/Nuxt Board
 </template>
 
 <script>
