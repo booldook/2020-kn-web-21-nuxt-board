@@ -1,10 +1,11 @@
 <template lang="pug">
 	v-data-table.my-5(:headers="headers" :items="list" :items-per-page="5" class="list-tb elevation-2")
 		template(v-slot:item="{item}")
-			tr(@click="onClick(item.id)")
+			//- tr(@click="onClick(item.id)")
+			tr
 				td.text-center {{item.id}}
 				td.text-left.bold.pointer
-					nuxt-link(to='`/detail/${item.id}`') {{item.title}}
+					nuxt-link(:to="`/detail/${item.id}`") {{item.title}}
 				td.text-center {{item.writer}}
 				td.text-center.icon
 					img.img(v-show="item.savefile" :src="srcIcon(item.savefile)")
@@ -39,7 +40,7 @@ export default {
 		},
 		srcIcon(savefile) {
 			if(savefile) {
-				return `/ext/${path.extname(savefile).substr(1)}.png`
+				return `/ext/${path.extname(savefile).substr(1).toLowerCase()}.png`
 			}
 		}
 	}

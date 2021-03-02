@@ -5,7 +5,7 @@ const isImage = (filename) => {
 }
 
 const filePath = (filename) => {
-	return `http://127.0.0.1:3000/storages/${filename.substr(0, 9)}/${filename}`;
+	return `${process.env.SERVER}/storages/${filename.substr(0, 9)}/${filename}`;
 }
 
 

@@ -2,7 +2,7 @@
 	.index-wrapper
 		BoardList(:list="list")
 		a(href=`${process.env.SERVER}/board/create`)
-			v-btn.my-4.mx-auto.d-block(color="teal grey--text text--lighten-4") 글작성
+			v-btn.my-4.mx-auto.d-block(color="teal blue-grey--text text--lighten-4") 글작성
 </template>
 
 <script>
