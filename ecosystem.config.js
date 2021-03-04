@@ -1,7 +1,7 @@
 module.exports = {
 	apps: [
 		{
-			name: 'sample-app',
+			name: 'nuxt-board',
 			// package.json에 정의된 npm run start를 실행하게 해서 PM2로 관리하게 한다.
 			script: 'npm',
 			args: 'run start',
