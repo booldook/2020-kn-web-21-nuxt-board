@@ -7,7 +7,7 @@
 			.navi
 				a(href=`${process.env.SERVER}`) Node/Express Board
 			.navi
-				a(href=`${process.env.REACT}`) React/Nuxt Board
+				a(href=`${process.env.REACT}`) React/Next Board
 </template>
 
 <script>

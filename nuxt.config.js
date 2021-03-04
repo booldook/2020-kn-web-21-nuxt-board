@@ -96,7 +96,7 @@ export default {
   },
 
 	server: {
-		port: 8000,
+		port: 5000,
 		host: '127.0.0.1'
 	}
 }

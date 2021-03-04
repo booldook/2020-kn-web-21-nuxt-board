@@ -36,7 +36,7 @@ export default {
 	name: 'detail.id',
 	layout: 'layout-default',
 	async asyncData({ params }) {
-		let { data } = await axios.get(`http://127.0.0.1:3000/api/view/${ params.id }`)
+		let { data } = await axios.get(`http://15.164.16.245:3000/api/view/${ params.id }`)
 		let list = data
 		list.wdate = moment(list.created).format('YYYY-MM-DD HH:mm:ss');
 		if(list.savefile) {
