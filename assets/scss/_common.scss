@@ -1,4 +1,4 @@
-@import './mixins';
+@import "mixins";
 
 html, body {
 	margin: 0;
@@ -19,45 +19,21 @@ a {
 	&:hover {color: inherit; text-decoration: none;}
 }
 
-.fade-enter, .fade-leave-to {
-	opacity: 0;
-}
-.fade-enter-active {
-	transition: opacity 0.35s ease;
-}
-.fade-leave-active {
-	transition: opacity 0.15s ease;
+.pointer {
+	cursor: pointer;
 }
 
-.slide-fade-enter, .slide-fade-leave-to {
-	transform: translateY(10px);
-	opacity: 0;
-}
-.slide-fade-enter-active {
-	transition: all 0.35s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-leave-active {
-	transition: all 0.15s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+.pointer:hover{
+	cursor: pointer;
 }
 
-.slide-left-enter, .slide-left-leave-to {
-	transform: translateX(-10px);
-	opacity: 0;
-}
-.slide-left-enter-active {
-	transition: all 0.35s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-left-leave-active {
-	transition: all 0.15s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+.bold {
+	font-weight: bold;
 }
 
-.slide-right-enter, .slide-right-leave-to {
-	transform: translateX(10px);
-	opacity: 0;
+.img {
+	width: 100%;
 }
-.slide-right-enter-active {
-	transition: all 0.35s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-right-leave-active {
-	transition: all 0.15s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+.imgx {
+	max-width: 100%;
 }

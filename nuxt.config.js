@@ -3,9 +3,13 @@ import nuxtStyledResources from "@nuxtjs/style-resources";
 
 export default {
 	mode: 'universal',
-	// target: 'static',
+	target: 'static',
 	optimization: {
 		minimize: true
+	},
+	server: {
+		port: 5000,
+		host: '127.0.0.1'
 	},
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -93,10 +97,5 @@ export default {
   dir: {
     layouts: 'views/layouts',
     pages: 'views/pages'
-  },
-
-	server: {
-		port: 5000,
-		host: '127.0.0.1'
-	}
+  }
 }
