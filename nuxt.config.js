@@ -2,7 +2,6 @@ import colors from 'vuetify/es5/util/colors'
 import nuxtStyledResources from "@nuxtjs/style-resources";
 
 export default {
-	mode: 'universal',
 	target: 'static',
 	optimization: {
 		minimize: true
